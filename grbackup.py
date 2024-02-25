@@ -291,7 +291,7 @@ if param.log_email:
     logger.addHandler(eh)
 
 #Start the serious work
-logger.info("GRBackup "+version+ " - "+ param.label + " ("+param.name+")")
+logger.info("GRBackup "+VERSION+ " - "+ param.label + " ("+param.name+")")
 logger.debug("[START]")
 
 if param.simulation:
