@@ -53,7 +53,7 @@
 # [LOW] support compresion of copies
 
 
-version = "0.10.0"
+VERSION = "0.10.0"
 log_output = ""
 
 import os
