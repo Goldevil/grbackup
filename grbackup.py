@@ -57,8 +57,6 @@ VERSION = "0.10.0"
 log_output = ""
 
 import os
-import paramiko
-from pprint import pprint
 import datetime
 import time
 import smtplib
@@ -74,10 +72,12 @@ import shutil
 import glob
 import stat
 import uuid
+import paramiko
+from pprint import pprint
 
-def dump(obj):
-  for attr in dir(obj):
-    print("obj.%s = %r" % (attr, getattr(obj, attr)))
+#def dump(obj):
+#  for attr in dir(obj):
+#    print("obj.%s = %r" % (attr, getattr(obj, attr)))
 
 class gr_param:
     def __init__(self,name):
@@ -184,7 +184,7 @@ def copyfilter(source, destination,AllowedPattern,MinSize):
                         shutil.copyfile(sfile, dfile)
                         totalsize=totalsize+sfilesize
                     except:
-                        print("Error. Skip")
+                        logger.info("Error. Skip")
     for sfolder in glob.glob(source+"*/",recursive=False):
         #print("Subfolder: "+os.path.basename(os.path.normpath(sfolder)))
         dfolder=destination+"/"+os.path.basename(os.path.normpath(sfolder))
