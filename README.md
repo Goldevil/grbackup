@@ -177,8 +177,9 @@ I do not commit to implement any of these features. The current version already 
 
 # Author
 
-GR Backup has been written by Karim El Founas (KEF) karim.elfounas@gmail.com
+GR Backup has been written by Karim El Founas (KEF) karim dot elfounas at gmail dot com
 
 # License
+
 
 GR Backup is published under LGPL-2.0 (see LICENSE file)
